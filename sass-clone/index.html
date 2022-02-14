@@ -20,34 +20,40 @@
           our users to get in the streets and join them if you can.
         </p>
       </div>
-      <nav class="navbar">
-        <div
-          class="navbar__logo"
-          style="
-            background-image: url('https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg');
-          "
-        ></div>
-        <ul class="navbar__menu">
-          <li>Install</li>
-          <li>Learn Sass</li>
-          <li>Blog</li>
-          <li>Documentation</li>
-          <li>Get Involved</li>
-        </ul>
-        <div class="navbar__search">
-          <i class="fas fa-search"></i>
-          <input class="search__input" type="text" placeholder="Search" />
+      <!-- head태그 언제 사용되지..? header, head차이? -->
+      <div class="head-box">
+        <div class="logoAndNav">
+          <div
+            class="logo"
+            style="
+              background-image: url('https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg');
+            "
+          ></div>
+          <nav class="navbar">
+            <ul class="menu">
+              <li>Install</li>
+              <li>Learn Sass</li>
+              <li>Blog</li>
+              <li>Documentation</li>
+              <li>Get Involved</li>
+            </ul>
+            <div class="search">
+              <i class="fas fa-search"></i>
+              <input class="input" type="text" placeholder="Search" size="10" />
+            </div>
+          </nav>
         </div>
-        <span>CSS with superpowers</span>
-      </nav>
+        <span class="main-description">CSS with superpowers</span>
+      </div>
     </header>
     <section class="info">
       <div class="description">
-        <span
-          >Sass is the most mature, stable, and powerful professional grade CSS
+        <p>
+          Sass is the most mature, stable, and powerful professional grade CSS
           extension language in the world.
-        </span>
+        </p>
         <div
+          class="glass-img"
           style="
             background-image: url('https://sass-lang.com/assets/img/illustrations/glasses-2087d741.svg');
           "
@@ -64,12 +70,12 @@
           <a href="#">3.6.5</a>
         </li>
         <li class="ruby-sass"><a href="#">Ruby Sass</a>😈</li>
-        <a href="#">Implementation Guide</a>
+        <li><a href="#">Implementation Guide</a></li>
       </ul>
       <div class="features">
         <div class="feature-box">
           <div class="title">CSS Compatible</div>
-          <p class="description">
+          <p class="feature__description">
             Sass is completely compatible with all versions of CSS. We take this
             compatibility seriously, so that you can seamlessly use any
             available CSS libraries.
@@ -77,7 +83,7 @@
         </div>
         <div class="feature-box">
           <div class="title">Feature Rich</div>
-          <p class="description">
+          <p class="feature__description">
             Sass boasts more features and abilities than any other CSS extension
             language out there. The Sass Core Team has worked endlessly to not
             only keep up, but stay ahead.
@@ -85,28 +91,28 @@
         </div>
         <div class="feature-box">
           <div class="title">Mature</div>
-          <p class="description">
+          <p class="feature__description">
             Sass has been actively supported for about 15 years by its loving
             Core Team.
           </p>
         </div>
         <div class="feature-box">
           <div class="title">Industry Approved</div>
-          <p class="description">
+          <p class="feature__description">
             Over and over again, the industry is choosing Sass as the premier
             CSS extension language.
           </p>
         </div>
         <div class="feature-box">
           <div class="title">Large Community</div>
-          <p class="description">
+          <p class="feature__description">
             Sass is actively supported and developed by a consortium of several
             tech companies and hundreds of developers.
           </p>
         </div>
         <div class="feature-box">
           <div class="title">Frameworks</div>
-          <p class="description">
+          <p class="feature__description">
             There are an endless number of frameworks built with Sass. Compass,
             Bourbon, and Susy just to name a few.
           </p>
@@ -114,16 +120,18 @@
       </div>
     </section>
     <footer>
-      <p class="copyright">
-        Sass © 2006–2022 the Sass team, and numerous contributors. It is
-        available for use and modification under the MIT License.
-      </p>
-      <ul class="support">
-        <li>Sass on GitHub</li>
-        <li>Website Source Code</li>
-        <li>Style Guide</li>
-        <li>Community Guidelines</li>
-      </ul>
+      <div>
+        <p class="copyright">
+          Sass © 2006–2022 the Sass team, and numerous contributors. It is
+          available for use and modification under the MIT License.
+        </p>
+        <ul class="support">
+          <li>Sass on GitHub</li>
+          <li>Website Source Code</li>
+          <li>Style Guide</li>
+          <li>Community Guidelines</li>
+        </ul>
+      </div>
       <button class="twitter">
         <i class="fab fa-twitter"></i>
         <span>Follow @SassCSS</span>
