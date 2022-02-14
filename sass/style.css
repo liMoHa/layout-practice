@@ -1,0 +1,14 @@
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+.container .item1 {
+  width: 100px;
+  color: blue;
+}
+.container .item2 {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

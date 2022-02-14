@@ -1,0 +1,19 @@
+@use 'partial';
+@mixin size($size: 100px) {
+  width: $size;
+  height: $size;
+}
+
+.container {
+  @include size;
+  background-color: partial.$color;
+
+  .item1 {
+    width: partial.$large;
+    color: blue;
+  }
+
+  .item2 {
+    color: red;
+  }
+}
